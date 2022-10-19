@@ -18,7 +18,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Apod;
 using System.IO;
-using System.Web.Script.Serialization;
+using BeyondLine.Apod;
 
 namespace BeyondLine
 {
@@ -27,34 +27,46 @@ namespace BeyondLine
     /// </summary>
     public partial class MainWindow : Window
     {
-        static HttpClient client = new HttpClient();
         static string api_key = "api_key=92q8cw5k6SWV3BImSmJDgcMc5w7aWdeUxwZHHHgZ";
+        Apodcheck AC = new Apodcheck();
         public MainWindow()
         {
             InitializeComponent();
-        }
-        [SuppressUnmanagedCodeSecurity, SecurityCritical, DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
-        public static extern bool SystemParametersInfo(int nAction, int nParam, string value, int ignore);
-        private void Click_Test(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(Datepicker.SelectedDate.Value.Year.ToString() + "-" + Datepicker.SelectedDate.Value.Month.ToString() + "-" + Datepicker.SelectedDate.Value.Day.ToString());         
+            
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("https://api.nasa.gov/planetary/apod?date=2022-10-4&" + api_key);
-            var respuesta = req.GetResponse();
-            var dataStream = respuesta.GetResponseStream();
-            StreamReader reader = new StreamReader(dataStream);
-            string responseFromServer = reader.ReadToEnd();
-            JavaScriptSerializer j = new JavaScriptSerializer();
-            Data model = j.Deserialize<Data>(responseFromServer);
-            using (WebClient client = new WebClient())
-            {
-                client.DownloadFile(new Uri(model.hdurl), @"D:\Hình ảnh\Thời sinh viên\wallpaper.jpg");
-                SystemParametersInfo(20, 0, @"D:\Hình ảnh\Thời sinh viên\wallpaper.jpg", 0);
-                this.Close();
-                //Registry.CurrentUser.OpenSubKey(@"Control Panel\Desktop", RegistryKeyPermissionCheck.ReadWriteSubTree).SetValue("wallpaper", wallpaper);
-            }
+            
         }
+        public static async Task soso()
+        {
+            using var client = new ApodClient("92q8cw5k6SWV3BImSmJDgcMc5w7aWdeUxwZHHHgZ");
+            var response = await client.FetchApodAsync();
+
+            if (response.StatusCode != ApodStatusCode.OK)
+            {
+                Console.WriteLine(response.Error.ErrorCode);
+                Console.WriteLine(response.Error.ErrorMessage);
+                return;
+            }
+
+            var apod = response.Content;
+            Console.WriteLine(apod.Title);
+            Console.WriteLine(apod.ContentUrl);
+            Console.WriteLine(apod.Explanation);
+
+            foreach (var a in response.AllContent)
+            {
+                var formattedDate = apod.Date.ToString("MMMM d, yyyy");
+                Console.WriteLine($"{formattedDate}: \"{apod.Title}\".");
+            }
+            //client.Dispose();
+        }
+        private void Click_Test(object sender, RoutedEventArgs e)
+        {
+            nut.Content = "fuck";
+            soso();
+        }
+    }
 }
