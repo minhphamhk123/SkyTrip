@@ -20,3 +20,9 @@ D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\Beyond
 D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\BeyondLine.dll
 D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\BeyondLine.pdb
 D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\BeyondLine.genruntimeconfig.cache
+D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\BeyondLine.Resource.resources
+D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\BeyondLine.csproj.GenerateResource.cache
+D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\App.baml
+D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\Debug\netcoreapp3.1\WpfAnimatedGif.dll

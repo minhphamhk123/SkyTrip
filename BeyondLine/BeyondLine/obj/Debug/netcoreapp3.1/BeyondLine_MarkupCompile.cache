@@ -1,7 +1,7 @@
 ﻿BeyondLine
 
 
-exe
+winexe
 C#
 .cs
 D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\
@@ -12,8 +12,8 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\App.xaml
 11407045341
 
-51303184764
-193458974393
+7-423047793
+196-414404461
 MainWindow.xaml;
 
 False

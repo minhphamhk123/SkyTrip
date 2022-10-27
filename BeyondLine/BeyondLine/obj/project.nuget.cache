@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "hQmarwXJ9j1H0JbMjad3ZniMjqpKm0U3ode5gGUe6DVLeFCj8FPLciBwAfRUGigoUwAaM/fqOuwjo0NMIl6OKw==",
+  "dgSpecHash": "lj8FCWISyL68vj+dQ5rKRZH4gN2bwRPszPrHbhQKfZnpJ7NFe3GxtLJIjey1eXSUiLEAmbgx1hL4+4QG4cVTSQ==",
   "success": true,
   "projectFilePath": "D:\\programer\\Github\\SkyTrip\\BeyondLine\\BeyondLine\\BeyondLine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\minhp\\.nuget\\packages\\apod.net\\1.0.1\\apod.net.1.0.1.nupkg.sha512",
-    "C:\\Users\\minhp\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512"
+    "C:\\Users\\minhp\\.nuget\\packages\\materialdesigncolors\\2.0.9\\materialdesigncolors.2.0.9.nupkg.sha512",
+    "C:\\Users\\minhp\\.nuget\\packages\\materialdesignthemes\\4.6.1\\materialdesignthemes.4.6.1.nupkg.sha512",
+    "C:\\Users\\minhp\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512",
+    "C:\\Users\\minhp\\.nuget\\packages\\wpfanimatedgif\\2.0.2\\wpfanimatedgif.2.0.2.nupkg.sha512"
   ],
   "logs": []
 }

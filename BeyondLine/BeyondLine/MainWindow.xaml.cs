@@ -29,12 +29,22 @@ namespace BeyondLine
     {
         static string api_key = "api_key=92q8cw5k6SWV3BImSmJDgcMc5w7aWdeUxwZHHHgZ";
         Apodcheck AC = new Apodcheck();
+        static double firstWidth = 800;
+        static double firstHeight = 450;
         public MainWindow()
         {
             InitializeComponent();
-            
+            this.Height = SystemParameters.PrimaryScreenHeight;
+            this.Width = SystemParameters.PrimaryScreenWidth;
+            //caculate(SystemParameters.PrimaryScreenHeight - firstHeight, SystemParameters.PrimaryScreenWidth - firstWidth);         
         }
 
+        void caculate(double a, double b)
+        {
+            
+            mainbackgrond.Width += b;
+            mainbackgrond.Height += a;
+        }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             
@@ -63,10 +73,10 @@ namespace BeyondLine
             }
             //client.Dispose();
         }
-        private void Click_Test(object sender, RoutedEventArgs e)
+
+        private void Close_click(object sender, MouseButtonEventArgs e)
         {
-            nut.Content = "fuck";
-            soso();
+            System.Windows.Application.Current.Shutdown();
         }
     }
 }
