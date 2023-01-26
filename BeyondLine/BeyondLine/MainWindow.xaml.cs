@@ -27,31 +27,33 @@ namespace BeyondLine
     /// </summary>
     public partial class MainWindow : Window
     {
-        static string api_key = "api_key=92q8cw5k6SWV3BImSmJDgcMc5w7aWdeUxwZHHHgZ";
+        static string api_key = "92q8cw5k6SWV3BImSmJDgcMc5w7aWdeUxwZHHHgZ";
         Apodcheck AC = new Apodcheck();
-        static double firstWidth = 800;
-        static double firstHeight = 450;
+        Picture_of_day pod = new Picture_of_day();
+
         public MainWindow()
         {
             InitializeComponent();
-            this.Height = SystemParameters.PrimaryScreenHeight;
-            this.Width = SystemParameters.PrimaryScreenWidth;
-            //caculate(SystemParameters.PrimaryScreenHeight - firstHeight, SystemParameters.PrimaryScreenWidth - firstWidth);         
+            SetDateInCorner();
         }
 
-        void caculate(double a, double b)
+        private void SetDateInCorner()
         {
-            
-            mainbackgrond.Width += b;
-            mainbackgrond.Height += a;
+            if (DateTime.Today.Day < 10)
+            {
+                day.Content = "0" + DateTime.Today.Day.ToString() + ".";
+            }
+            else
+                day.Content = DateTime.Today.Day.ToString() + ".";
+            if (DateTime.Today.Month < 10)
+                month.Content = "0" + DateTime.Today.Month.ToString() + ".";
+            else
+                month.Content = DateTime.Today.Month.ToString() + ".";
+            year.Content = DateTime.Today.Year.ToString();
         }
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        /*public static async Task soso()
         {
-            
-        }
-        public static async Task soso()
-        {
-            using var client = new ApodClient("92q8cw5k6SWV3BImSmJDgcMc5w7aWdeUxwZHHHgZ");
+            using var client = new ApodClient(api_key);
             var response = await client.FetchApodAsync();
 
             if (response.StatusCode != ApodStatusCode.OK)
@@ -72,6 +74,20 @@ namespace BeyondLine
                 Console.WriteLine($"{formattedDate}: \"{apod.Title}\".");
             }
             //client.Dispose();
+        }*/
+
+
+
+        private void Test_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            pod.Close();
+            if (pod.Check_button == 1)
+            {
+                var obj = pod.Content;
+                pod.Content = null;
+                Showmake.Children.Clear();
+                Showmake.Children.Add(obj as UIElement); 
+            }
         }
 
         private void Close_click(object sender, MouseButtonEventArgs e)

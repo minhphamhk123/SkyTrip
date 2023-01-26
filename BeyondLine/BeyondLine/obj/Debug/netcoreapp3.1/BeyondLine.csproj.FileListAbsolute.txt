@@ -26,3 +26,8 @@ D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\Debug\netcoreapp3.1\Materi
 D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
 D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\App.baml
 D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\Debug\netcoreapp3.1\WpfAnimatedGif.dll
+D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\Picture of day.g.cs
+D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\Picture of day.baml
+D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\Galery.g.cs
+D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\Views\Dialogs\InvalidKeyDialog.baml
+D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\Debug\netcoreapp3.1\Views\Dialogs\InvalidKeyDialog.g.cs

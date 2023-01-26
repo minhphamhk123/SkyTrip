@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:BeyondLine"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="BeyondLine.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" ShowInTaskbar="False" WindowStyle="None" SizeToContent="WidthAndHeight" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" WindowState="Maximized">
+        Title="MainWindow" Height="725" Width="1107" WindowStyle="ToolWindow" ResizeMode="CanResizeWithGrip" WindowState="Normal" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="/Resources/uwp1834098.png" Stretch="UniformToFill"/>
     </Window.Background>
@@ -16,61 +16,49 @@
             <RowDefinition Height="0*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid Grid.RowSpan="2">
-            <Grid Margin="0,55,0,0" HorizontalAlignment="Right" Width="800">
-                <Label x:Name="month" Content="10." Margin="35,0,0,10" Foreground="White" MouseDown="Close_click" BorderThickness="0.5,0.5,0.5,0.5" Height="26" Width="22" HorizontalAlignment="Left" FontFamily="Bahnschrift" VerticalAlignment="Bottom"/>
-                <Label x:Name="day" Content="27." Margin="10,0,0,10" Foreground="White" MouseDown="Close_click" BorderThickness="0.5,0.5,0.5,0.5" Height="26" Width="25" HorizontalAlignment="Left" FontFamily="Bahnschrift" VerticalAlignment="Bottom"/>
-                <Label x:Name="year" Content="2022" Margin="57,0,0,10" Foreground="White" MouseDown="Close_click" BorderThickness="0.5,0.5,0.5,0.5" Height="26" Width="37" HorizontalAlignment="Left" FontFamily="Bahnschrift" VerticalAlignment="Bottom"/>
-                <Grid HorizontalAlignment="Right" Width="800" Height="395" VerticalAlignment="Center">
-                    <Image x:Name="mainbackgrond" gif:ImageBehavior.AnimatedSource="Resources/giphy.gif" Margin="315,18,0,0" RenderTransformOrigin="1,1" Height="429" VerticalAlignment="Top" HorizontalAlignment="Left" Width="367" >
-                        <Image.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="0"/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </Image.RenderTransform>
-                    </Image>
-                    <Path x:Name="path" Data="M0,100 v-200 h160 a120,100,0,1,0,10,0 h160 v200 z" Margin="319,72,0,0" Stretch="Fill" Height="278" VerticalAlignment="Top" Width="383" HorizontalAlignment="Left" >
-                        <Path.Fill>
-                            <ImageBrush ImageSource="/Resources/uwp1834098.png" Stretch="UniformToFill"/>
-                        </Path.Fill>
-                    </Path>
-                    <Rectangle HorizontalAlignment="Left" Height="57" Margin="313,14,0,0" Stroke="Black" VerticalAlignment="Top" Width="445">
-                        <Rectangle.Fill>
-                            <ImageBrush ImageSource="/Resources/uwp1834098.png" Stretch="UniformToFill"/>
-                        </Rectangle.Fill>
-                    </Rectangle>
-                    <Rectangle HorizontalAlignment="Left" Height="48" Margin="290,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="445">
-                        <Rectangle.Fill>
-                            <ImageBrush ImageSource="/Resources/uwp1834098.png" Stretch="UniformToFill"/>
-                        </Rectangle.Fill>
-                    </Rectangle>
-                    <Rectangle HorizontalAlignment="Left" Height="48" Margin="155,177,0,0" Stroke="Black" VerticalAlignment="Top" Width="341" RenderTransformOrigin="0.5,0.5">
-                        <Rectangle.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="89.912"/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </Rectangle.RenderTransform>
-                        <Rectangle.Fill>
-                            <ImageBrush ImageSource="/Resources/uwp1834098.png" Stretch="UniformToFill"/>
-                        </Rectangle.Fill>
-                    </Rectangle>
-                </Grid>
+        <Grid x:Name="Showmake" Grid.RowSpan="2">
+            <Grid HorizontalAlignment="Center" Width="1107" Margin="0,55,0,0">
+                <Image x:Name="mainbackgrond" gif:ImageBehavior.AnimatedSource="Resources/giphy.gif" Margin="281,64,0,0" RenderTransformOrigin="1,1" HorizontalAlignment="Left" Width="504" Height="538" VerticalAlignment="Top" >
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Path x:Name="myRect"  Stroke="Black" Opacity="100" Stretch="Fill" HorizontalAlignment="Center" Width="1107" Height="654" VerticalAlignment="Top">
+                    <Path.Fill>
+                        <ImageBrush ImageSource="/Resources/uwp1834098.png" Stretch="None"/>
+                    </Path.Fill>
+                    <Path.Data>
+                        <GeometryGroup FillRule="EvenOdd">
+                            <RectangleGeometry Rect="0,0,300,300"/>
+                            <EllipseGeometry Center="150,150" RadiusX="52" RadiusY="88"/>
+                        </GeometryGroup>
+                    </Path.Data>
+                </Path>
+            </Grid>
+
+            <Grid x:Name="Datetime" Height="32" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="102">
+                <Label x:Name="month" Content="10." Margin="35,0,0,10" Foreground="White" BorderThickness="0.5,0.5,0.5,0.5" Height="26" Width="22" HorizontalAlignment="Left" FontFamily="Bahnschrift" VerticalAlignment="Bottom"/>
+                <Label x:Name="day" Content="27." Margin="10,0,0,10" Foreground="White" BorderThickness="0.5,0.5,0.5,0.5" Height="26" Width="25" HorizontalAlignment="Left" FontFamily="Bahnschrift" VerticalAlignment="Bottom"/>
+                <Label x:Name="year" Content="2022" Margin="57,0,0,10" Foreground="White" BorderThickness="0.5,0.5,0.5,0.5" Height="26" Width="37" HorizontalAlignment="Left" FontFamily="Bahnschrift" VerticalAlignment="Bottom"/>
 
             </Grid>
 
         </Grid>
         <Grid Height="54" VerticalAlignment="Top" Background="Black" Grid.RowSpan="2">
-            <Label x:Name="Close" Content="EXIT" Margin="0,14,23,14" Foreground="#DDFFFFFF" MouseDown="Close_click" BorderBrush="White" BorderThickness="0.5,0.5,0.5,0.5" Height="26" Width="32" HorizontalAlignment="Right"/>
+            <Label x:Name="Close" Content="EXIT" Margin="0,14,23,14" Foreground="#DDFFFFFF" MouseDown="Close_click" BorderBrush="White" BorderThickness="0.5,0.5,0.5,0.5" Height="26" Width="32" HorizontalAlignment="Right" Cursor="Hand"/>
             <Label Content="S K Y  T R I P" HorizontalAlignment="Left" Margin="24,0,0,0" VerticalAlignment="Center" Width="94" FontFamily="Calibri" FontSize="17" Background="{DynamicResource MaterialDesignBody}" Foreground="#DDFFFFFF" FontStretch="Normal" FontStyle="Normal" FontWeight="Light" VerticalContentAlignment="Top"/>
+            <Expander Header="EXPLORE" Margin="142,6,230,6" Background="#FFD62020" Foreground="White" Cursor="Hand">
+                <Grid Background="#FFE5E5E5">
+                    <Label x:Name="Close_Copy" Content="EXIT" Foreground="#DDFFFFFF" BorderBrush="White" Height="26" HorizontalAlignment="Left" Width="116" VerticalAlignment="Top" Margin="249,12,0,0" Background="#FFD80000"/>
+                </Grid>
+            </Expander>
             <Border BorderThickness="0.5,1,1,0.5" BorderBrush="White" Margin="-1,-12,-1,0"/>
-            <Label x:Name="Close_Copy" Content="EXIT" Margin="0,14,109,14" Foreground="#DDFFFFFF" MouseDown="Close_click" BorderBrush="White" BorderThickness="0.5,0.5,0.5,0.5" Height="26" HorizontalAlignment="Right" Width="32"/>
-            <Label x:Name="Close_Copy1" Content="EXIT" Margin="0,14,167,14" Foreground="#DDFFFFFF" MouseDown="Close_click" BorderBrush="White" BorderThickness="0.5,0.5,0.5,0.5" Height="26" HorizontalAlignment="Right" Width="32"/>
+            <Label x:Name="Test" Margin="971,14,0,14" Foreground="#DDFFFFFF" BorderBrush="White" BorderThickness="0.5,0.5,0.5,0.5" Height="26" HorizontalAlignment="Left" Width="32" Content="TEST" MouseDown="Test_MouseDown"/>
         </Grid>
     </Grid>
 </Window>

@@ -7,7 +7,51 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Galery.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Picture of day.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Galery.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Picture of day.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AboutPageView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CuriosityRoverPhotosView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Dialogs\InvalidKeyDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Dialogs\RoverPhotoDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\InSightLanderWeatherView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NaturalEventTrackerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\OpportunityRoverPhotosView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PerseveranceRoverPhotosView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SpiritRoverPhotosView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
