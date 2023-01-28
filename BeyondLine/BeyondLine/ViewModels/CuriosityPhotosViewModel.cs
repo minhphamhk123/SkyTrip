@@ -9,6 +9,7 @@ using System.Windows.Input;
 using Microsoft.Toolkit.Mvvm.Input;
 using BeyondLine.Model;
 using BeyondLine.Services;
+using BeyondLine.Apod;
 
 namespace BeyondLine.ViewModels
 {
@@ -30,8 +31,7 @@ namespace BeyondLine.ViewModels
             SelectedDate = DateTimeOffset.Now.AddDays(1);
             RoverPhotos = new ObservableCollection<MarsRoverPhoto>();
 
-            LoadPhotosCommand =
-               new AsyncRelayCommand(LoadCuriosityRoverPhotos);
+            LoadPhotosCommand = new AsyncRelayCommand(LoadCuriosityRoverPhotos);
         }
 
         public MarsRover CuriosityRover { get; set; }

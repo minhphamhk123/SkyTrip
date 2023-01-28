@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using BeyondLine.Model;
+using BeyondLine.Apod;
 
 namespace BeyondLine.ViewModels
 {

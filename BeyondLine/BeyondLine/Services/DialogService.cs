@@ -1,6 +1,5 @@
 ﻿using BeyondLine.Model;
 using BeyondLine.Views.Dialogs;
-using BeyondLine.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;

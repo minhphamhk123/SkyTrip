@@ -8,6 +8,7 @@ using System.Windows.Input;
 using Microsoft.Toolkit.Mvvm.Input;
 using BeyondLine.Model;
 using BeyondLine.Services;
+using BeyondLine.Apod;
 
 namespace BeyondLine.ViewModels
 {

@@ -8,7 +8,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using BeyondLine.Extensions;
 using BeyondLine.Model;
-using BeyondLine.Apod.MarsRoverPhotos;
 
 namespace BeyondLine.Apod.MarsRoverPhotos
 {

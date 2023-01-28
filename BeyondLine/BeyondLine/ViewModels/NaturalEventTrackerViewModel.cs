@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using BeyondLine.Apod;
 using BeyondLine.Services;
 
 namespace BeyondLine.ViewModels

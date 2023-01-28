@@ -17,7 +17,7 @@ using Windows.ApplicationModel.Activation;
 using BeyondLine.Helpers;
 using Microsoft.Extensions.DependencyInjection;
 using BeyondLine.ViewModels;
-using BeyondLine.Views;
+using BeyondLine.;
 using BeyondLine.Views.Dialogs;
 
 namespace BeyondLine

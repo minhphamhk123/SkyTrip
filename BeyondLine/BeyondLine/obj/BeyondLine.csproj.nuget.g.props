@@ -14,7 +14,6 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgUno_UI Condition=" '$(PkgUno_UI)' == '' ">D:\System\Microsoft\Pack\uno.ui\4.6.41</PkgUno_UI>
     <PkgMaterialDesignThemes Condition=" '$(PkgMaterialDesignThemes)' == '' ">D:\System\Microsoft\Pack\materialdesignthemes\4.6.1</PkgMaterialDesignThemes>
   </PropertyGroup>
 </Project>

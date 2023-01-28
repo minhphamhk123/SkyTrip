@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.Toolkit.Mvvm": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.2, )"
@@ -64,10 +68,6 @@
             "Refractored.MvvmHelpers": {
               "target": "Package",
               "version": "[1.6.2, )"
-            },
-            "Uno.UI": {
-              "target": "Package",
-              "version": "[4.6.41, )"
             },
             "WpfAnimatedGif": {
               "target": "Package",
