@@ -1,5 +1,7 @@
 ﻿using Microsoft.Toolkit.Mvvm.Input;
-using BeyondLine.Services;
+using NasaApiExplorer.Models;
+using NasaApiExplorer.Services;
+using NasaApiExplorer.Services.NasaApis;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -8,10 +10,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using BeyondLine.Model;
-using BeyondLine.Apod;
 
-namespace BeyondLine.ViewModels
+namespace NasaApiExplorer.ViewModels
 {
     public abstract class RoverPhotosBaseViewModel : Base.Observable
     {

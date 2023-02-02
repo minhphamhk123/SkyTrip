@@ -6,11 +6,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Microsoft.Toolkit.Mvvm.Input;
-using BeyondLine.Model;
-using BeyondLine.Services;
-using BeyondLine.Apod;
+using NasaApiExplorer.Models;
+using NasaApiExplorer.Services;
+using NasaApiExplorer.Services.NasaApis;
 
-namespace BeyondLine.ViewModels
+namespace NasaApiExplorer.ViewModels
 {
     public class PerseverancePhotosViewModel : RoverPhotosBaseViewModel
     {

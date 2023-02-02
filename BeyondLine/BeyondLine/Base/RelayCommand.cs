@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace BeyondLine.Base
+namespace NasaApiExplorer.Base
 {
     /// <summary>
     /// A command whose sole purpose is to relay its functionality 
@@ -99,7 +99,7 @@ namespace BeyondLine.Base
         {
 
             this.action = action;
-            _canExecute = canExecute;
+            this._canExecute = canExecute;
         }
 
         public bool CanExecute(object arg)

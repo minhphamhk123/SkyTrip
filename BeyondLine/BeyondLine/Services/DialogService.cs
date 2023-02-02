@@ -1,5 +1,5 @@
-﻿using BeyondLine.Model;
-using BeyondLine.Views.Dialogs;
+﻿using NasaApiExplorer.Models;
+using NasaApiExplorer.Views.Dialogs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
 
-namespace BeyondLine.Services
+namespace NasaApiExplorer.Services
 {
     public class DialogService : IDialogService
     {

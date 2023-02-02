@@ -5,14 +5,13 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
-using BeyondLine.Services;
+using NasaApiExplorer.Services.NasaApis;
 using System.Windows.Input;
 using Microsoft.Toolkit.Mvvm.Input;
-using BeyondLine.Services;
-using BeyondLine.Model;
-using BeyondLine.Apod;
+using NasaApiExplorer.Models;
+using NasaApiExplorer.Services;
 
-namespace BeyondLine.ViewModels
+namespace NasaApiExplorer.ViewModels
 {
     public class OpportunityPhotosViewModel : RoverPhotosBaseViewModel
     {

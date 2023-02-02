@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Microsoft.Toolkit.Mvvm.Input;
-using BeyondLine.Base;
-using BeyondLine.Model;
-using BeyondLine.Services;
+using NasaApiExplorer.Base;
+using NasaApiExplorer.Models;
+using NasaApiExplorer.Services;
 
-namespace BeyondLine.ViewModels
+namespace NasaApiExplorer.ViewModels
 {
     public class RoverPhotoDialogViewModel : Base.Observable
     {
@@ -57,7 +57,7 @@ namespace BeyondLine.ViewModels
         {
             try
             {
-                await _fileDownloadService.DownloadFileAsync(CurrentPhoto.ImageSourceUrl);
+                await _fileDownloadService.DownloadFileAsync(CurrentPhoto.ImageSourceUrl,"");
             }
             catch (Exception ex)
             {

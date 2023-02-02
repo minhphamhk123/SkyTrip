@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
 
-namespace BeyondLine.Services
+namespace NasaApiExplorer.Services
 {
     /// <summary>
     /// Interface for a service for picking and creating folders

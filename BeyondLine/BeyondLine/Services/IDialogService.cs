@@ -1,11 +1,11 @@
-﻿using BeyondLine.Model;
+﻿using NasaApiExplorer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BeyondLine.Services
+namespace NasaApiExplorer.Services
 {
     public interface IDialogService
     {

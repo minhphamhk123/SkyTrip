@@ -1,7 +1,7 @@
 ﻿using Windows.ApplicationModel.Core;
 using Windows.UI.ViewManagement;
 
-namespace BeyondLine.Helpers
+namespace NasaApiExplorer.Helpers
 {
     /// <summary>
     /// A helper class to interact with the title bar

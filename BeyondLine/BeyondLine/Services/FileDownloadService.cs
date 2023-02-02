@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Windows.Storage;
 using Windows.Storage.Pickers;
 
-namespace BeyondLine.Services
+namespace NasaApiExplorer.Services
 {
     /// <summary>
     /// Class for downloading image files from web urls
@@ -29,15 +29,16 @@ namespace BeyondLine.Services
         /// </summary>
         /// <param name="url">Url of image file</param>
         /// <returns></returns>
-        public async Task DownloadFileAsync(string imageUrl)
+        public async Task<string> DownloadFileAsync(string imageUrl, string check)
         {
             var pickedFolder = await _folderService.OpenFolderPickerAsync();
             var photoFolder = await _folderService.CreateFolderByNameAsync(pickedFolder, "Mars Rover Photos");
-
+            check = photoFolder.Path;
             if (photoFolder != null)
             {
                 await WriteToFile(photoFolder, imageUrl);
             }
+            return check;
         }
 
         /// <summary>

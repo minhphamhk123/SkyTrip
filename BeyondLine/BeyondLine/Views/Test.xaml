@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="NasaApiExplorer.Views.Test"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NasaApiExplorer.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:my="using:Globet"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <my:Globett x:Name="Earth"/>
+
+        <Border Name="topBar" >
+            <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center" Background="#E0E0E0" Opacity="0.6" Width="642">
+                <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Left" Orientation="Horizontal">
+                    <TextBlock Foreground="#0000FF" FontWeight="Bold">Latitude:</TextBlock>
+                    <TextBox Name="LatitudeTxt" Width="100" />
+                    <TextBlock Foreground="#0000FF" FontWeight="Bold">Longitude:</TextBlock>
+                    <TextBox Name="LongitudeTxt" Width="100" />
+                    <Button Name="GoBtn" Width="50" Margin="10,0,0,0" Click="GoBtn_Click">Go!</Button>
+                    <TextBlock Foreground="#0000FF" FontWeight="Bold">Change Provider:</TextBlock>
+
+                    <ComboBox Name="ddlLayers" Width="70" SelectionChanged="ddlLayers_SelectionChanged" ></ComboBox>
+                    <ComboBox Name="ddlModes" Width="70" SelectionChanged="ddlModes_SelectionChanged" ></ComboBox>
+
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <Slider RenderTransformOrigin="0.501,0.622" 
+            x:Name="ZoomSlider" 
+                Orientation="Vertical" 
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Top"
+                Height="120"
+                TickFrequency="1">
+            <!--IsSnapToTickEnabled="True"
+                Maximum="11" Minimum="0" Value="0" Margin="0,22,14,0"-->
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                    <SkewTransform AngleX="0" AngleY="0"/>
+                    <RotateTransform Angle="179.863"/>
+                    <TranslateTransform X="-0.954" Y="-9.028"/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+            <Slider.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                    <GradientStop Color="#1B3F8B" Offset="1"/>
+                </LinearGradientBrush>
+            </Slider.Background>
+        </Slider>
+
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Red" FontWeight="Bold" FontSize="24" >+</TextBlock>
+    </Grid>
+</Page>

@@ -1,0 +1,78 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="NasaApiExplorer.Views.AstronomyPictureView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:local="using:NasaApiExplorer"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Windows.UI.Xaml.Controls" xmlns:behaviors="using:NasaApiExplorer.Behaviors"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+    <interactivity:Interaction.Behaviors>
+        <core:EventTriggerBehavior EventName="Loaded">
+            <core:InvokeCommandAction x:ConnectionId='2'                                              />
+        </core:EventTriggerBehavior>
+    </interactivity:Interaction.Behaviors>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/uwp1834098.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid
+            Grid.Row="0"
+            Margin="0,0,0,0"
+            HorizontalAlignment="Stretch">
+            <StackPanel Orientation="Vertical" />
+        </Grid>
+        <ScrollViewer Grid.Row="1" HorizontalAlignment="Center" Width="1500">
+            <Grid Height="1000" Width="NaN">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+
+                </Grid.RowDefinitions>
+                <StackPanel
+                    Grid.Row="0"
+                    Margin="8,0,8,8"
+                    Orientation="Vertical">
+                    <TextBlock x:ConnectionId='5'                                                                            />
+                    <TextBlock x:ConnectionId='6'                                                                           TextWrapping="Wrap" />
+                    <TextBlock x:ConnectionId='7'                                                                                  TextWrapping="Wrap" />
+                    <TextBlock x:ConnectionId='8'                                                                                />
+                    <StackPanel Orientation="Horizontal">
+                        <CalendarDatePicker x:ConnectionId='9' x:Name="Dayapod">
+                            <interactivity:Interaction.Behaviors>
+                                <behaviors:DateChangedTriggerBehavior x:ConnectionId='12'                                                     />
+                            </interactivity:Interaction.Behaviors>
+                        </CalendarDatePicker>
+                        <Button x:ConnectionId='10' Margin="30,0,0,0" Content="Check"                                                  />
+                        <muxc:Button x:ConnectionId='11' Margin="10,0,0,0" Content="Set Wallpaper"                                                      ></muxc:Button>
+                    </StackPanel>
+                </StackPanel>
+                <Grid Grid.Row="1" HorizontalAlignment="Center">
+                    <Image x:ConnectionId='4'
+                        x:Name="imgPictureOfDay"
+                        Height="Auto"
+                        HorizontalAlignment="Left"
+                                                                                                  
+                        Stretch="Uniform" />
+                </Grid>
+            </Grid>
+        </ScrollViewer>
+        <muxc:ProgressRing x:ConnectionId='3'
+            x:Name="progressRing"
+            Grid.Row="1"
+            Width="100"
+            Height="100"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+                                                                 />
+    </Grid>
+</Page>
+

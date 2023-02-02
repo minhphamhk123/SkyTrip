@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using BeyondLine.Apod;
-using BeyondLine.Services;
+using NasaApiExplorer.Services.NasaApis;
 
-namespace BeyondLine.ViewModels
+namespace NasaApiExplorer.ViewModels
 {
     public class NaturalEventTrackerViewModel : Base.Observable
     {

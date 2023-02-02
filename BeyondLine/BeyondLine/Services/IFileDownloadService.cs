@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BeyondLine.Services
+namespace NasaApiExplorer.Services
 {
     /// <summary>
     /// Interface for downloading files from a web url.
@@ -15,7 +15,7 @@ namespace BeyondLine.Services
         /// </summary>
         /// <param name="imageUrl"></param>
         /// <returns></returns>
-        Task DownloadFileAsync(string imageUrl);
+        Task<string> DownloadFileAsync(string imageUrl, string check);
 
         /// <summary>
         /// Downloads all files to a folder specified from a folder picker shown

@@ -7,11 +7,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Microsoft.Toolkit.Mvvm.Input;
-using BeyondLine.Model;
-using BeyondLine.Services;
-using BeyondLine.Apod;
+using NasaApiExplorer.Models;
+using NasaApiExplorer.Services;
+using NasaApiExplorer.Services.NasaApis;
 
-namespace BeyondLine.ViewModels
+namespace NasaApiExplorer.ViewModels
 {
     public class CuriosityPhotosViewModel : RoverPhotosBaseViewModel
     {
@@ -31,7 +31,8 @@ namespace BeyondLine.ViewModels
             SelectedDate = DateTimeOffset.Now.AddDays(1);
             RoverPhotos = new ObservableCollection<MarsRoverPhoto>();
 
-            LoadPhotosCommand = new AsyncRelayCommand(LoadCuriosityRoverPhotos);
+            LoadPhotosCommand =
+               new AsyncRelayCommand(LoadCuriosityRoverPhotos);
         }
 
         public MarsRover CuriosityRover { get; set; }

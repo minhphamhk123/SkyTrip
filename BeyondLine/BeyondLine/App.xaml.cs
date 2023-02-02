@@ -1,26 +1,30 @@
-﻿using BeyondLine.Apod.MarsRoverPhotos;
-using BeyondLine.Apod;
-using BeyondLine.Services;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
+﻿using System;
+using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Navigation;
-using Microsoft.Extensions.Hosting;
+using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using BeyondLine.Helpers;
+using Windows.Foundation;
+using Windows.Foundation.Collections;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
+using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Navigation;
 using Microsoft.Extensions.DependencyInjection;
-using BeyondLine.ViewModels;
-using BeyondLine.;
-using BeyondLine.Views.Dialogs;
+using Microsoft.Extensions.Hosting;
+using NasaApiExplorer.Services;
+using NasaApiExplorer.Views;
+using NasaApiExplorer.Views.Dialogs;
+using NasaApiExplorer.Services.NasaApis;
+using NasaApiExplorer.Services.NasaApis.MarsRoverPhotos;
+using NasaApiExplorer.Services.NasaApis.Apod;
+using NasaApiExplorer.ViewModels;
+using NasaApiExplorer.Helpers;
 
-namespace BeyondLine
+namespace NasaApiExplorer
 {
     public static class StaticKeys
     {
@@ -79,12 +83,14 @@ namespace BeyondLine
         {
             // Services
             services.AddHttpClient<IRoverPhotoService, RoverPhotoService>();
+            services.AddHttpClient<IAstronomyPictureOfTheDayService, AstronomyPictureOfTheDayService>();
             services.AddSingleton<IFolderService, FolderService>();
             services.AddHttpClient<IFileDownloadService, FileDownloadService>();
             services.AddSingleton<INasaApiService, NasaApiService>();
             services.AddSingleton<IDialogService, DialogService>();
 
             // View Models
+            services.AddTransient<AstronomyPictureViewModel>();
             services.AddTransient<PerseverancePhotosViewModel>();
             services.AddTransient<CuriosityPhotosViewModel>();
             services.AddTransient<OpportunityPhotosViewModel>();
@@ -100,6 +106,7 @@ namespace BeyondLine
         protected async override void OnLaunched(LaunchActivatedEventArgs e)
         {
             // Register NASA API Value
+            Environment.SetEnvironmentVariable("NASA_API_KEY", "92q8cw5k6SWV3BImSmJDgcMc5w7aWdeUxwZHHHgZ");
             // Check to see if API KEY is in your Environment Variables with name NASA_API_KEY
             if (Environment.GetEnvironmentVariable("NASA_API_KEY") == null)
             {
