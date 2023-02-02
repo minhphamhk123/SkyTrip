@@ -18953,11 +18953,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Nasa-Api-Explorer-master\\Nasa-Api-Explorer-master\\NasaApiExplorer\\NasaApiExplorer.csproj",
+      "projectUniqueName": "D:\\programer\\Github\\SkyTrip\\BeyondLine\\BeyondLine\\NasaApiExplorer.csproj",
       "projectName": "NasaApiExplorer",
-      "projectPath": "D:\\Nasa-Api-Explorer-master\\Nasa-Api-Explorer-master\\NasaApiExplorer\\NasaApiExplorer.csproj",
+      "projectPath": "D:\\programer\\Github\\SkyTrip\\BeyondLine\\BeyondLine\\NasaApiExplorer.csproj",
       "packagesPath": "D:\\System\\Microsoft\\Pack",
-      "outputPath": "D:\\Nasa-Api-Explorer-master\\Nasa-Api-Explorer-master\\NasaApiExplorer\\obj\\",
+      "outputPath": "D:\\programer\\Github\\SkyTrip\\BeyondLine\\BeyondLine\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

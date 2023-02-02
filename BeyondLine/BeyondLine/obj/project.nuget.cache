@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7smd+B2Cbr6BvP/2Gl3eEHoqthgUiQs9qU6RdroUlaWOQRJD+KqyGb5GGHWuafTZ4FoUVP0qFucEVeHU3/igKA==",
+  "dgSpecHash": "X6dOQPz0W5k9/VgKalyrHUsRufqtt5sY7jFxL8oQ8WGjF+5wEy78qK+i0mrJAnMwT42al3BQku6R99sXhQpYJA==",
   "success": true,
-  "projectFilePath": "D:\\Nasa-Api-Explorer-master\\Nasa-Api-Explorer-master\\NasaApiExplorer\\NasaApiExplorer.csproj",
+  "projectFilePath": "D:\\programer\\Github\\SkyTrip\\BeyondLine\\BeyondLine\\NasaApiExplorer.csproj",
   "expectedPackageFiles": [
     "D:\\System\\Microsoft\\Pack\\colorcode.core\\2.0.6\\colorcode.core.2.0.6.nupkg.sha512",
     "D:\\System\\Microsoft\\Pack\\colorcode.uwp\\2.0.6\\colorcode.uwp.2.0.6.nupkg.sha512",
