@@ -48,11 +48,12 @@
                     <StackPanel Orientation="Horizontal">
                         <CalendarDatePicker x:ConnectionId='9' x:Name="Dayapod">
                             <interactivity:Interaction.Behaviors>
-                                <behaviors:DateChangedTriggerBehavior x:ConnectionId='12'                                                     />
+                                <behaviors:DateChangedTriggerBehavior x:ConnectionId='13'                                                     />
                             </interactivity:Interaction.Behaviors>
                         </CalendarDatePicker>
                         <Button x:ConnectionId='10' Margin="30,0,0,0" Content="Check"                                                  />
-                        <muxc:Button x:ConnectionId='11' Margin="10,0,0,0" Content="Set Wallpaper"                                                      ></muxc:Button>
+                        <Button x:ConnectionId='11' Margin="30,0,0,0" Content="Download"                                                        />
+                        <muxc:Button x:ConnectionId='12' Margin="10,0,0,0" Content="Set Wallpaper"                                                      ></muxc:Button>
                     </StackPanel>
                 </StackPanel>
                 <Grid Grid.Row="1" HorizontalAlignment="Center">

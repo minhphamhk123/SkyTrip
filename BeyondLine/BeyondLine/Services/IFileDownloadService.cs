@@ -15,7 +15,7 @@ namespace NasaApiExplorer.Services
         /// </summary>
         /// <param name="imageUrl"></param>
         /// <returns></returns>
-        Task<string> DownloadFileAsync(string imageUrl, string check);
+        Task DownloadFileAsync(string imageUrl);
 
         /// <summary>
         /// Downloads all files to a folder specified from a folder picker shown

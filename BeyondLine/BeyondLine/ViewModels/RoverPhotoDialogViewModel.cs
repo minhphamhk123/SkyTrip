@@ -57,7 +57,7 @@ namespace NasaApiExplorer.ViewModels
         {
             try
             {
-                await _fileDownloadService.DownloadFileAsync(CurrentPhoto.ImageSourceUrl,"");
+                await _fileDownloadService.DownloadFileAsync(CurrentPhoto.ImageSourceUrl);
             }
             catch (Exception ex)
             {

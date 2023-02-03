@@ -1,1 +1,1 @@
-D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\NasaApiExplorer.csproj;x64
+D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\NasaApiExplorer.csproj;x64

@@ -29,16 +29,14 @@ namespace NasaApiExplorer.Services
         /// </summary>
         /// <param name="url">Url of image file</param>
         /// <returns></returns>
-        public async Task<string> DownloadFileAsync(string imageUrl, string check)
+        public async Task DownloadFileAsync(string imageUrl)
         {
             var pickedFolder = await _folderService.OpenFolderPickerAsync();
             var photoFolder = await _folderService.CreateFolderByNameAsync(pickedFolder, "Mars Rover Photos");
-            check = photoFolder.Path;
             if (photoFolder != null)
             {
                 await WriteToFile(photoFolder, imageUrl);
             }
-            return check;
         }
 
         /// <summary>

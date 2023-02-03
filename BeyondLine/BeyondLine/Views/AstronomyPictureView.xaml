@@ -52,6 +52,7 @@
                             </interactivity:Interaction.Behaviors>
                         </CalendarDatePicker>
                         <Button Margin="30,0,0,0" Content="Check" Command="{x:Bind Path=ViewModel.LoadApodCommand}"/>
+                        <Button Margin="30,0,0,0" Content="Download" Command="{x:Bind Path=ViewModel.DownloadPhotosCommand}"/>
                         <muxc:Button Margin="10,0,0,0" Content="Set Wallpaper" Command="{x:Bind Path=ViewModel.SetWallpaperCommand}"></muxc:Button>
                     </StackPanel>
                 </StackPanel>

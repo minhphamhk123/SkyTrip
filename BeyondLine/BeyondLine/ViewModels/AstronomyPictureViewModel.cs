@@ -12,6 +12,7 @@ using Microsoft.Toolkit.Mvvm.Input;
 using NasaApiExplorer.Services;
 using NasaApiExplorer.Services.NasaApis;
 using Windows.Storage;
+using Windows.Storage.Pickers;
 using Windows.System.UserProfile;
 using Windows.UI.Popups;
 using Windows.UI.Xaml.Controls;
@@ -29,6 +30,7 @@ namespace NasaApiExplorer.ViewModels
         public ICommand LoadApodCommand { get; set; }
         public ICommand UpdateDateCommand { get; set; }
         public ICommand SetWallpaperCommand { get; set; }
+        public ICommand DownloadPhotosCommand { get; set; }
 
         public AstronomyPictureViewModel(INasaApiService nasaApiService, IFileDownloadService fileDownloadService)
         {
@@ -41,6 +43,8 @@ namespace NasaApiExplorer.ViewModels
                new Base.RelayCommand<DateTimeOffset?>(UpdateSelectedDate);
             SetWallpaperCommand =
                 new AsyncRelayCommand(SetWallPaperClickAsync);
+            DownloadPhotosCommand =
+                new AsyncRelayCommand(DownloadPhotos);
         }
 
         [SuppressUnmanagedCodeSecurity, SecurityCritical, DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
@@ -68,12 +72,32 @@ namespace NasaApiExplorer.ViewModels
             }
         }
 
+        /// <summary>
+        /// Downloads rover photos for the selected date in a location chosen 
+        /// through a folder picker.
+        /// </summary>
+        /// <returns></returns>
+        public async Task DownloadPhotos()
+        {
+            // Retrieve urls from source url property of the photo objects
+            string urls = _astronomyPictureOfTheDay.HdUrl;
+
+            try
+            {
+                await _fileDownloadService.DownloadFileAsync(urls);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
         public void UpdateSelectedDate(DateTimeOffset? date) => SelectedDate = date;
 
         public async Task SetWallPaperClickAsync()
         {
 
-            string urls = _astronomyPictureOfTheDay.HdUrl;
+            /*string urls = _astronomyPictureOfTheDay.HdUrl;
             string test = "";
             bool success = false;
             try
@@ -89,8 +113,24 @@ namespace NasaApiExplorer.ViewModels
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+            }*/
+            FileOpenPicker picker = new FileOpenPicker();
+            picker.FileTypeFilter.Add("*");
+            StorageFile file = await picker.PickSingleFileAsync();
+
+            // copy file to the local folder  
+            StorageFolder folder = ApplicationData.Current.LocalFolder;
+            StorageFile newfile = await file.CopyAsync(folder, "test.png", NameCollisionOption.ReplaceExisting);
+
+            if (file != null)
+            {
+                if (UserProfilePersonalizationSettings.IsSupported())
+                {
+
+                    UserProfilePersonalizationSettings profileSettings = UserProfilePersonalizationSettings.Current;
+                    bool success = await profileSettings.TrySetWallpaperImageAsync(newfile);
+                }
             }
-            
         }
 
         /*async Task<bool> SetWallpaperAsync(string localAppDataFileName)

@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>3f6b560f-1bb9-4778-bc04-2d33fd29bafe</PackageIdentityName>
     <PackageIdentityPublisher>CN=hlj51</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>DAB83CF80D1148E7AB3981FAE383C6DE549E11E1C26A8B85EB1536AD46B04D2B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3f6b560f-1bb9-4778-bc04-2d33fd29bafe_1.0.0.0_x64__atrhdazc1t21y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3f6b560f-1bb9-4778-bc04-2d33fd29bafe_atrhdazc1t21y!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-02T09:05:12.703</Modified>
+      <Modified>2023-02-03T18:27:50.331</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\NasaApiExplorer.exe">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\NasaApiExplorer.exe">
       <PackagePath>entrypoint\NasaApiExplorer.exe</PackagePath>
-      <Modified>2023-02-02T09:05:10.857</Modified>
+      <Modified>2023-02-03T18:27:49.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\System\Microsoft\Pack\microsoft.web.webview2\1.0.1264.42\build\..\runtimes\win-x64\native_uap\Microsoft.Web.WebView2.Core.dll">
       <PackagePath>Microsoft.Web.WebView2.Core.dll</PackagePath>
@@ -298,124 +298,124 @@
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Media\Microsoft.Toolkit.Uwp.UI.Controls.Media.xr.xml</PackagePath>
       <Modified>2021-05-12T07:25:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Assets\Demo.exe">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Assets\Demo.exe">
       <PackagePath>Assets\Demo.exe</PackagePath>
       <Modified>2023-02-02T08:51:27.511</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Assets\giphy.gif">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Assets\giphy.gif">
       <PackagePath>Assets\giphy.gif</PackagePath>
       <Modified>2023-01-29T14:52:06.927</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Assets\uranus.png">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Assets\uranus.png">
       <PackagePath>Assets\uranus.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2023-01-30T04:08:04.526</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Assets\uwp1834098.png">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Assets\uwp1834098.png">
       <PackagePath>Assets\uwp1834098.png</PackagePath>
       <Modified>2023-01-29T14:52:06.953</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2022-01-30T11:10:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-30T11:10:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <Modified>2022-01-30T11:10:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <Modified>2022-01-30T11:10:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <Modified>2022-01-30T11:10:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <Modified>2022-01-30T11:10:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-30T11:10:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Assets\wp2461881-mars-wallpapers.jpg">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Assets\wp2461881-mars-wallpapers.jpg">
       <PackagePath>Assets\wp2461881-mars-wallpapers.jpg</PackagePath>
       <Modified>2023-02-02T06:43:17.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Assets\WPF.Globe.ClientControl.dll">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Assets\WPF.Globe.ClientControl.dll">
       <PackagePath>Assets\WPF.Globe.ClientControl.dll</PackagePath>
       <Modified>2023-02-01T18:02:06.791</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2022-01-30T11:10:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\NasaApiExplorer.xr.xml">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\NasaApiExplorer.xr.xml">
       <PackagePath>NasaApiExplorer.xr.xml</PackagePath>
       <Modified>2023-02-02T07:33:53.524</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.455</Modified>
+      <Modified>2023-02-03T18:27:48.791</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Views\AboutPageView.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Views\AboutPageView.xbf">
       <PackagePath>Views\AboutPageView.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.497</Modified>
+      <Modified>2023-02-03T18:27:48.811</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Views\CuriosityRoverPhotosView.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Views\CuriosityRoverPhotosView.xbf">
       <PackagePath>Views\CuriosityRoverPhotosView.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.497</Modified>
+      <Modified>2023-02-03T18:27:48.811</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Views\Dialogs\RoverPhotoDialog.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Views\Dialogs\RoverPhotoDialog.xbf">
       <PackagePath>Views\Dialogs\RoverPhotoDialog.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.468</Modified>
+      <Modified>2023-02-03T18:27:48.797</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Views\EarthObsevarsion.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Views\EarthObsevarsion.xbf">
       <PackagePath>Views\EarthObsevarsion.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.498</Modified>
+      <Modified>2023-02-03T18:27:48.811</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Views\InvalidKeyDialog.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Views\InvalidKeyDialog.xbf">
       <PackagePath>Views\InvalidKeyDialog.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.498</Modified>
+      <Modified>2023-02-03T18:27:48.811</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Views\AstronomyPictureView.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Views\AstronomyPictureView.xbf">
       <PackagePath>Views\AstronomyPictureView.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.498</Modified>
+      <Modified>2023-02-03T18:27:48.811</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Views\HomePage.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Views\HomePage.xbf">
       <PackagePath>Views\HomePage.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.498</Modified>
+      <Modified>2023-02-03T18:27:48.811</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Views\InSightLanderWeatherView.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Views\InSightLanderWeatherView.xbf">
       <PackagePath>Views\InSightLanderWeatherView.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.498</Modified>
+      <Modified>2023-02-03T18:27:48.812</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Views\MainPage.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.483</Modified>
+      <Modified>2023-02-03T18:27:48.804</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Views\NaturalEventTrackerView.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Views\NaturalEventTrackerView.xbf">
       <PackagePath>Views\NaturalEventTrackerView.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.498</Modified>
+      <Modified>2023-02-03T18:27:48.812</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Views\OpportunityRoverPhotosView.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Views\OpportunityRoverPhotosView.xbf">
       <PackagePath>Views\OpportunityRoverPhotosView.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.499</Modified>
+      <Modified>2023-02-03T18:27:48.812</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Views\PerseveranceRoverPhotosView.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Views\PerseveranceRoverPhotosView.xbf">
       <PackagePath>Views\PerseveranceRoverPhotosView.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.499</Modified>
+      <Modified>2023-02-03T18:27:48.812</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Views\SpiritRoverPhotosView.xbf">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Views\SpiritRoverPhotosView.xbf">
       <PackagePath>Views\SpiritRoverPhotosView.xbf</PackagePath>
-      <Modified>2023-02-02T09:05:10.499</Modified>
+      <Modified>2023-02-03T18:27:48.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -429,13 +429,13 @@
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2022-12-16T01:17:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <Modified>2023-02-02T08:17:29.979</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Nasa-Api-Explorer-master\Nasa-Api-Explorer-master\NasaApiExplorer\bin\x64\Debug\Core\NasaApiExplorer.exe">
+    <AppxPackagedFile Include="D:\programer\Github\SkyTrip\BeyondLine\BeyondLine\bin\x64\Debug\Core\NasaApiExplorer.exe">
       <PackagePath>NasaApiExplorer.exe</PackagePath>
-      <Modified>2023-02-02T09:05:12.698</Modified>
+      <Modified>2023-02-03T18:27:50.325</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
